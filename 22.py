@@ -1,5 +1,4 @@
 import sys
-import math
 
 sys.stdin = open("inp.txt", "r")
 
