@@ -15,7 +15,7 @@ a = [int(x) for x in input().split()]
 max_length = 0
 for i in range(n):
     d = a[i]
-    for j in range(j + 1, n):
+    for j in range(i + 1, n):
         d = gcd(d, a[j])
         if d > 1:
             max_length = max(max_length, j - i + 1)
