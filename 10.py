@@ -14,7 +14,9 @@ while True:
 a = [-1 for i in range(n)]
 mark = [False for i in range(n)]
 
-# invariant of the first iteration: the largest element is located in the last index with 0 inversions
+# observation: the largest element is the last element with 0 inversions
+# how to use this observation to find original sequences from inversions
+
 for i in range(n, 0, -1):
     for j in range(n - 1, -1, -1):
         if inversion[j] == 0 and mark[j] == False:
