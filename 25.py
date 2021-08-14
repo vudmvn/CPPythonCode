@@ -13,6 +13,16 @@ def lcm(a, b):
     return a * b / gcd(a, b)
 
 
+# n / lcm(p,q) : chia het cho p va q (chia het cho ca 2)
+
+# n / p + n / q - n/lcm(p,q): chia het cho p hoac q nhung ko chia het cho ca 2
+
+# n chia het cho ca p , q <=> n chia het cho bscnn (p,q) hay n // lcm(p,q)
+
+# n ko chia het cho r
+
+# n // lcm(p,q) - n //lcm(r,lcm(p,q))
+
 while True:
     try:
         n, p, q, r = [int(x) for x in input().split()]
